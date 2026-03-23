@@ -1,0 +1,70 @@
+{
+  "name": "inkpilot",
+  "version": "0.0.0",
+  "description": "Your personal AI assistant — Claude on Bedrock, accessible via Telegram, with voice support and multi-profile context management",
+  "keywords": [
+    "ai",
+    "assistant",
+    "bedrock",
+    "claude",
+    "telegram",
+    "voice",
+    "cdk",
+    "lambda",
+    "serverless"
+  ],
+  "homepage": "https://github.com/Zweer/InkPilot#readme",
+  "bugs": {
+    "url": "https://github.com/Zweer/InkPilot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zweer/InkPilot.git"
+  },
+  "license": "MIT",
+  "author": "Zweer <n.olivieriachille@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "clean": "rimraf dist cdk.out",
+    "deploy": "cdk deploy --all",
+    "lint": "concurrently npm:lint:* --prefixColors auto",
+    "lint:engines": "ls-engines",
+    "lint:format": "biome check --write",
+    "lint:lockfile": "lockfile-lint",
+    "lint:package": "npmPkgJsonLint .",
+    "lint:sort_package": "sort-package-json \"package.json\"",
+    "lint:typecheck": "tsc --noEmit",
+    "prepare": "lefthook install",
+    "synth": "cdk synth",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.200.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^25.5.0",
+    "@vitest/coverage-v8": "^4.1.0",
+    "aws-cdk": "^2.200.0",
+    "bonvoy": "^0.13.1",
+    "concurrently": "^9.2.1",
+    "lefthook": "^2.1.4",
+    "lockfile-lint": "^5.0.0",
+    "ls-engines": "^0.10.0",
+    "npm-package-json-lint": "^9.1.0",
+    "rimraf": "^6.1.3",
+    "sort-package-json": "^3.6.1",
+    "tsdown": "^0.21.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">= 22"
+  }
+}
