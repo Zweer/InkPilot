@@ -41,7 +41,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.250.0",
+    "aws-cdk-lib": "^2.251.0",
     "constructs": "^10.6.0"
   },
   "devDependencies": {
