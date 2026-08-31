@@ -45,13 +45,13 @@
     "constructs": "^10.8.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.9",
+    "@biomejs/biome": "^2.5.11",
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
     "@tsconfig/node22": "^22.0.6",
     "@types/node": "^25.9.3",
     "@vitest/coverage-v8": "^4.1.11",
-    "aws-cdk": "^2.1138.0",
+    "aws-cdk": "^2.1139.0",
     "bonvoy": "^0.13.1",
     "concurrently": "^9.2.1",
     "lefthook": "^2.1.10",
